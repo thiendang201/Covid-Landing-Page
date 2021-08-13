@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "CAAA,AAAA,AAAA,QAAC,CAAS,QAAQ,AAAjB,EAAmB;EAClB,SAAS,EAAE,gBAAgB;EAC3B,OAAO,EAAE,CAAC;EACV,mBAAmB,EAAE,kBAAkB;CAKxC;;CARD,AAAA,AAIE,QAJD,CAAS,QAAQ,AAAjB,CAIE,YAAY,CAAC;EACZ,SAAS,EAAE,aAAa;EACxB,OAAO,EAAE,CAAC;CACX",
+    "sources": [
+        "aos-custom.scss"
+    ],
+    "names": [],
+    "file": "aos-custom.css"
+}

@@ -1,0 +1,9 @@
+[data-aos="t-y-20"] {
+  transform: translateY(20px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

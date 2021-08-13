@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- reset css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- tween max -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+      integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- lettering -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"
+      integrity="sha512-9ex1Kp3S7uKHVZmQ44o5qPV6PnP8/kYp8IpUHLDJ+GZ/qpKAqGgEEH7rhYlM4pTOSs/WyHtPubN2UePKTnTSww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- simple parallax -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/aos-custom.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- begin: header -->
+      <header>
+        <a href="#" class="logo">
+          <img src="./assets/img/logo/UTE-light.svg" alt="logo" />
+        </a>
+
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-overlay">
+          <div class="nav-overlay__close-btn tf-hover">
+            <i class="fas fa-times"></i>
+          </div>
+          <ul class="nav-overlay__list">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#content">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- end: header -->
+
+      <!--begin: banner -->
+      <div class="banner">
+        <div class="banner__img">
+          <img
+            src="./assets/img/banner/banner.jpg"
+            class="img-parallax"
+            alt="banner"
+          />
+        </div>
+
+        <div class="banner__title">
+          <h1>corona</h1>
+        </div>
+
+        <a href="#content" class="banner__scroll-down">
+          <span></span>
+        </a>
+
+        <div class="banner__media">
+          <ul>
+            <li class="">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end: banner -->
+
+      <!-- begin: content -->
+      <div id="content" class="content">
+        <!-- begin: about section -->
+        <section class="about content-section">
+          <h2 class="heading" data-aos="t-y-20" data-aos-delay="50">
+            Giới thiệu
+          </h2>
+          <div class="about__img" data-aos="t-y-20" data-aos-delay="100">
+            <img
+              class="img-parallax"
+              src="./assets/img/content/virus-corona.jpg"
+              alt="virus corona"
+            />
+
+            <div class="about__info">
+              <div class="about__info-name">
+                <p data-aos="t-y-20" data-aos-delay="200">Tên gọi:</p>
+                <h6 data-aos="t-y-20" data-aos-delay="300">Virus Corona</h6>
+              </div>
+
+              <div class="about__info-date">
+                <p data-aos="t-y-20" data-aos-delay="400">Bùng phát:</p>
+                <h6 data-aos="t-y-20" data-aos-delay="500">12/2019</h6>
+              </div>
+
+              <div class="about__info-location">
+                <p data-aos="t-y-20" data-aos-delay="600">Nguồn gốc:</p>
+                <h6 data-aos="t-y-20" data-aos-delay="700">
+                  Vũ Hán, Trung Quốc
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__description">
+            <h6 data-aos="t-y-20" data-aos-delay="100">Mô tả</h6>
+
+            <p data-aos="t-y-20" data-aos-delay="200">
+              Virus Corona là chủng virus mới chưa từng xuất hiện ở người, có
+              tên gọi từ nguồn gốc tiếng Latin. Vi rút Corona là chủng virus
+              được bao bọc bằng những chiếc gai bao bọc bên ngoài, tương tác với
+              thụ thể trên tế bào, theo cơ chế tương tự chìa khóa và ổ khóa, từ
+              đó cho phép virus xâm nhập vào bên trong. Tên gọi vi rút Corona có
+              nguồn gốc từ tiếng Latin, trong đó “corona” có nghĩa là “vương
+              miện” hoặc “hào quang”. Virus này có những chiếc gai bao bọc bên
+              ngoài, chúng tương tác với thụ thể trên tế bào, theo cơ chế tương
+              tự chìa khóa và ổ khóa, từ đó cho phép virus xâm nhập vào bên
+              trong.
+            </p>
+
+            <p data-aos="t-y-20" data-aos-delay="300">
+              Khi virus xâm nhập vào cơ thể, nó đi vào trong một số tế bào và
+              chiếm lấy bộ máy tế bào (gây tổn thương viêm đặc hiệu ở đường hô
+              hấp), đồng thời virus chuyển hướng bộ máy đó để phục vụ cho chính
+              nó, tạo ra virus mới và nhiễm tiếp người khác. Người nhiễm
+              2019-nCoV có các triệu chứng cấp tính: ho, sốt, khó thở, có thể
+              diễn biến đến viêm phổi nặng, suy hô hấp cấp tiến triển và tử
+              vong; đặc biệt ở những người lớn tuổi, người có bệnh mạn tính, suy
+              giảm miễn dịch. Thời gian ủ bệnh của 2019-nCoV là 14 ngày tức là
+              từ lúc nhiễm virus Corona tới lúc phát bệnh là 14 ngày mới có biểu
+              hiện lâm sàng. Điều này khiến cho các biện pháp kiểm soát hiện nay
+              rất khó phát hiện
+            </p>
+          </div>
+        </section>
+        <!-- end: about section -->
+
+        <!-- begin: variant section -->
+        <section class="variant content-section">
+          <h2 class="heading" data-aos="t-y-20" data-aos-delay="100">
+            Biến chủng
+          </h2>
+          <div class="varian__list">
+            <!-- delta variant -->
+            <div class="box mb-80">
+              <div class="txt">
+                <div class="txt__item-1">
+                  <span
+                    class="txt__item-num"
+                    data-aos="t-y-20"
+                    data-aos-delay="200"
+                    >1</span
+                  >
+                  <span
+                    class="txt__item-date"
+                    data-aos="t-y-20"
+                    data-aos-delay="250"
+                    >12/2020</span
+                  >
+                </div>
+
+                <div class="txt__item-2">
+                  <h3 class="txt__item-heading">
+                    <span data-aos="t-y-20" data-aos-delay="300"
+                      >Biến chủng</span
+                    >
+                    <span data-aos="t-y-20" data-aos-delay="350"> Delta</span>
+                  </h3>
+                </div>
+
+                <div class="txt__item-3">
+                  <span
+                    class="txt__item-id"
+                    data-aos="t-y-20"
+                    data-aos-delay="400"
+                    >B.1.617</span
+                  >
+                </div>
+              </div>
+              <div class="info" data-aos="t-y-20" data-aos-delay="500">
+                <img
+                  src="./assets/img/content/delta-variant.jpg"
+                  alt="Biến chủng delta"
+                  class="info__img img-parallax"
+                />
+                <div class="description">
+                  <h6 class="description__heading">Mô tả</h6>
+                  <p class="description__content">
+                    Đây là biến thể “đột biến kép” có tên gọi khác là B.1.617.2,
+                    được phát hiện lần đầu tiên tại Ấn Độ vào tháng 12/2020. Với
+                    tốc độ lây nhiễm vượt bậc, biến thể Delta hiện là chủng
+                    virus lây lan đến hơn 130 quốc gia và vùng lãnh thổ. Đáng lo
+                    ngại, những người nhiễm biến thể Delta có nguy cơ nhập viện
+                    cao hơn 85% so với biến thể Alpha cũng như tăng thêm rủi ro
+                    tử vong, đặc biệt những người mắc bệnh nền mãn tính.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- gamma variant -->
+            <div class="box mt-80">
+              <div class="txt">
+                <div class="txt__item-1">
+                  <span
+                    class="txt__item-num"
+                    data-aos="t-y-20"
+                    data-aos-delay="200"
+                    >2</span
+                  >
+                  <span
+                    class="txt__item-date"
+                    data-aos="t-y-20"
+                    data-aos-delay="250"
+                    >11/2020</span
+                  >
+                </div>
+
+                <div class="txt__item-2">
+                  <h3 class="txt__item-heading">
+                    <span data-aos="t-y-20" data-aos-delay="300"
+                      >Biến chủng</span
+                    >
+                    <span data-aos="t-y-20" data-aos-delay="350">Gamma</span>
+                  </h3>
+                </div>
+
+                <div class="txt__item-3">
+                  <span
+                    class="txt__item-id"
+                    data-aos="t-y-20"
+                    data-aos-delay="400"
+                    >P.1</span
+                  >
+                </div>
+              </div>
+              <div class="info" data-aos="t-y-20" data-aos-delay="500">
+                <img
+                  src="./assets/img/content/gamma-variant.jpg"
+                  alt="Biến chủng gamma"
+                  class="info__img img-parallax"
+                />
+                <div class="description">
+                  <h6 class="description__heading">Mô tả</h6>
+                  <p class="description__content">
+                    Biến thể Gamma, còn gọi là P.1, được phát hiện trên nhóm du
+                    khách người Nhật Bản vào tháng 1/2021, dù nó đã từng tồn tại
+                    ở Brazil từ tháng 11/2020. Chỉ trong một thời gian ngắn, P.1
+                    đã nhanh chóng trở thành chủng virus thống trị khắp Brazil
+                    và gieo rắc nỗi kinh hoàng hàng loạt quốc gia trên thế giới.
+                    Đáng chú ý, P.1 có khả năng lây nhiễm cao hơn gấp 2.5 lần so
+                    với chủng virus SARS-CoV-2 gốc xuất hiện ban đầu, khả năng
+                    kháng lại các kháng thể cũng cao hơn.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- beta variant -->
+            <div class="box mb-80">
+              <div class="txt">
+                <div class="txt__item-1">
+                  <span
+                    class="txt__item-num"
+                    data-aos="t-y-20"
+                    data-aos-delay="200"
+                    >3</span
+                  >
+                  <span
+                    class="txt__item-date"
+                    data-aos="t-y-20"
+                    data-aos-delay="250"
+                    >10/2020</span
+                  >
+                </div>
+
+                <div class="txt__item-2">
+                  <h3 class="txt__item-heading">
+                    <span data-aos="t-y-20" data-aos-delay="300"
+                      >Biến chủng</span
+                    >
+                    <span data-aos="t-y-20" data-aos-delay="350">Beta</span>
+                  </h3>
+                </div>
+
+                <div class="txt__item-3">
+                  <span
+                    class="txt__item-id"
+                    data-aos="t-y-20"
+                    data-aos-delay="400"
+                    >B.1.351</span
+                  >
+                </div>
+              </div>
+              <div class="info" data-aos="t-y-20" data-aos-delay="500">
+                <img
+                  src="./assets/img/content/beta-variant.jpg"
+                  alt="Biến chủng beta"
+                  class="info__img img-parallax"
+                />
+                <div class="description">
+                  <h6 class="description__heading">Mô tả</h6>
+                  <p class="description__content">
+                    Biến thể này còn được gọi là B.1.351, hay 501Y.V2, được tìm
+                    thấy ở Nam Phi vào đầu tháng 10/2020, góp phần vào việc gia
+                    tăng các ca nhiễm và nhập viện trên khắp Nam Phi. Theo đánh
+                    giá của các nhà dịch tễ, biến thể Belta khác với biến thể
+                    Alpha, có khả năng lây nhiễm gấp 1.5 lần, hung hãn hơn, có
+                    thể tiến hóa và thích nghi cao hơn… Ngày 31/01/2021, Việt
+                    Nam ghi nhận ca nhiễm biến thể Belta (B.1.351) đầu tiên từ
+                    chuyên gia nhập cảnh người Nam Phi được cách ly.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- alpha variant -->
+            <div class="box mt-80">
+              <div class="txt">
+                <div class="txt__item-1">
+                  <span
+                    class="txt__item-num"
+                    data-aos="t-y-20"
+                    data-aos-delay="200"
+                    >4</span
+                  >
+                  <span
+                    class="txt__item-date"
+                    data-aos="t-y-20"
+                    data-aos-delay="250"
+                    >9/2020</span
+                  >
+                </div>
+
+                <div class="txt__item-2">
+                  <h3 class="txt__item-heading">
+                    <span data-aos="t-y-20" data-aos-delay="300"
+                      >Biến chủng</span
+                    >
+                    <span data-aos="t-y-20" data-aos-delay="350">Alpha</span>
+                  </h3>
+                </div>
+
+                <div class="txt__item-3">
+                  <span
+                    class="txt__item-id"
+                    data-aos="t-y-20"
+                    data-aos-delay="400"
+                    >B.1.1.7</span
+                  >
+                </div>
+              </div>
+              <div class="info" data-aos="t-y-20" data-aos-delay="500">
+                <img
+                  src="./assets/img/content/alpha-variant.jpg"
+                  alt="Biến chủng alpha"
+                  class="info__img img-parallax"
+                />
+                <div class="description">
+                  <h6 class="description__heading">Mô tả</h6>
+                  <p class="description__content">
+                    Biến thể Alpha, còn có tên gọi khác là B.1.1.7 được phát
+                    hiện lần đầu tiên tại Vương quốc Anh, có khả năng lan lan
+                    nhanh gấp 70% so với chủng gốc ban đầu. Sự xuất hiện của
+                    Alpha đánh dấu cho đợt bùng phát làn sóng bùng phát COVID-19
+                    mạnh mẽ trên toàn cầu vào cuối năm 2020. Tại Việt Nam,
+                    B.1.1.7 chính là chủng virus được phát hiện ở nhiều ca bệnh
+                    hiện nay và trong đợt dịch ở Hải Dương, Quảng Ninh.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end: variant section -->
+      </div>
+      <!-- end: content -->
+
+      <!-- scrollbar -->
+      <div class="scroll-bar">
+        <div class="fill"></div>
+        <div class="counter">
+          <h2></h2>
+        </div>
+      </div>
+
+      <footer></footer>
+    </div>
+
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1200,
+        anchorPlacement: "center-bottom",
+      });
+    </script>
+
+    <!-- banner & menu animation -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
