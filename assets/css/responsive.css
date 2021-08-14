@@ -56,6 +56,10 @@
     margin-top: 48px;
   }
 
+  ._2m::after {
+    top: -20px;
+  }
+
   .author-title {
     font-size: 1.2rem;
   }
