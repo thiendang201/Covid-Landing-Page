@@ -1,6 +1,13 @@
 $(document).ready(function () {
   $(".banner__title h1").lettering();
 
+  // parallax effect
+  var image = document.querySelectorAll(".img-parallax-14");
+  new simpleParallax(image, {
+    scale: 1.6,
+    orientation: "down",
+  });
+
   // banner img animation
   TweenMax.from(".banner__img img", 2, {
     height: 0,
@@ -14,8 +21,8 @@ $(document).ready(function () {
     .queue(function (next) {
       $(this).css("height", "");
 
-      // parallax effect
-      var image = document.querySelectorAll(".img-parallax");
+      // banner parallax effect
+      var image = document.querySelectorAll(".banner .img-parallax");
       new simpleParallax(image, {
         scale: 1.6,
         orientation: "down",
@@ -85,8 +92,7 @@ t1.fromTo(
   ".nav-overlay",
   1.2,
   {
-    top: "-100vh",
-    opacity: 0.5,
+    opacity: 0,
     display: "none",
   },
   {
@@ -114,7 +120,7 @@ function CloseMenu() {
   $(".nav-overlay")
     .delay("2000")
     .queue(function (next) {
-      $(this).css("top", "-100vh");
+      $(this).css("display", "none");
       next();
     });
 }
@@ -122,7 +128,7 @@ function CloseMenu() {
 function OpenMenu() {
   t1.reversed(!t1.reversed());
   $(".nav-overlay__list li")
-    .delay("2000")
+    .delay("3000")
     .queue(function (next) {
       $(".nav-overlay__list li").addClass("tf-hover");
       next();
@@ -181,4 +187,17 @@ $(document).on("scroll", function () {
     }
     next();
   });
+});
+
+// slide
+var spv = window.innerWidth < 740 ? 1 : 2;
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: spv,
+  spaceBetween: 40,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });

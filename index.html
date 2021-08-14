@@ -23,25 +23,20 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- bootstrap -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
     <!-- tween max -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
       integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <!-- jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -61,9 +56,21 @@
     <!-- simple parallax -->
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 
+    <!-- slide -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/aos-custom.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/icon/mycollection/font/flaticon.css"
+    />
   </head>
   <body>
     <div class="main">
@@ -83,16 +90,19 @@
           </div>
           <ul class="nav-overlay__list">
             <li>
-              <a href="#">Home</a>
+              <a href="#">Trang chủ</a>
             </li>
             <li>
-              <a href="#content">About</a>
+              <a href="#about">Giới thiệu</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#variant">Biến chủng</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#message">Thông điệp 5K</a>
+            </li>
+            <li>
+              <a href="#life">Đời sống</a>
             </li>
           </ul>
         </nav>
@@ -136,13 +146,13 @@
       <!-- begin: content -->
       <div id="content" class="content">
         <!-- begin: about section -->
-        <section class="about content-section">
+        <section id="about" class="about content-section">
           <h2 class="heading" data-aos="t-y-20" data-aos-delay="50">
             Giới thiệu
           </h2>
           <div class="about__img" data-aos="t-y-20" data-aos-delay="100">
             <img
-              class="img-parallax"
+              class="img-parallax-14"
               src="./assets/img/content/virus-corona.jpg"
               alt="virus corona"
             />
@@ -201,7 +211,7 @@
         <!-- end: about section -->
 
         <!-- begin: variant section -->
-        <section class="variant content-section">
+        <section id="variant" class="variant content-section">
           <h2 class="heading" data-aos="t-y-20" data-aos-delay="100">
             Biến chủng
           </h2>
@@ -246,7 +256,7 @@
                 <img
                   src="./assets/img/content/delta-variant.jpg"
                   alt="Biến chủng delta"
-                  class="info__img img-parallax"
+                  class="info__img img-parallax-14"
                 />
                 <div class="description">
                   <h6 class="description__heading">Mô tả</h6>
@@ -303,7 +313,7 @@
                 <img
                   src="./assets/img/content/gamma-variant.jpg"
                   alt="Biến chủng gamma"
-                  class="info__img img-parallax"
+                  class="info__img img-parallax-14"
                 />
                 <div class="description">
                   <h6 class="description__heading">Mô tả</h6>
@@ -360,7 +370,7 @@
                 <img
                   src="./assets/img/content/beta-variant.jpg"
                   alt="Biến chủng beta"
-                  class="info__img img-parallax"
+                  class="info__img img-parallax-14"
                 />
                 <div class="description">
                   <h6 class="description__heading">Mô tả</h6>
@@ -417,7 +427,7 @@
                 <img
                   src="./assets/img/content/alpha-variant.jpg"
                   alt="Biến chủng alpha"
-                  class="info__img img-parallax"
+                  class="info__img img-parallax-14"
                 />
                 <div class="description">
                   <h6 class="description__heading">Mô tả</h6>
@@ -436,6 +446,103 @@
           </div>
         </section>
         <!-- end: variant section -->
+
+        <!-- begin: 5k message -->
+        <section id="message" class="content-section">
+          <h2 class="heading" data-aos="t-y-20" data-aos-delay="100">
+            Thông điệp 5k
+          </h2>
+          <div class="row-message">
+            <div class="row-1">
+              <div class="row__item" data-aos="t-y-20" data-aos-delay="200">
+                <i class="flaticon-mask _5k-icon"></i>
+                <h2 data-aos="t-y-20" data-aos-delay="300">Khẩu trang</h2>
+              </div>
+
+              <div class="row__item" data-aos="t-y-20" data-aos-delay="300">
+                <i class="flaticon-disinfectant _5k-icon"></i>
+                <h2 data-aos="t-y-20" data-aos-delay="400">Khử khuẩn</h2>
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="row__item" data-aos="t-y-20" data-aos-delay="400">
+                <i class="flaticon-no _5k-icon"></i>
+                <h2 data-aos="t-y-20" data-aos-delay="500">Không tập trung</h2>
+              </div>
+
+              <div class="row__item" data-aos="t-y-20" data-aos-delay="500">
+                <i class="flaticon-social-distancing _5k-icon _2m"></i>
+                <h2 data-aos="t-y-20" data-aos-delay="600">Khoảng cách</h2>
+              </div>
+              <div class="row__item" data-aos="t-y-20" data-aos-delay="600">
+                <i class="flaticon-health-care _5k-icon"></i>
+                <h2 data-aos="t-y-20" data-aos-delay="700">Khai báo y tế</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end: 5k message -->
+
+        <!-- Slider main container -->
+        <div id="life" class="content-section slider">
+          <h2 class="heading" data-aos="t-y-20" data-aos-delay="100">
+            Đời sống
+          </h2>
+          <div
+            class="swiper-container mySwiper"
+            data-aos="t-y-20"
+            data-aos-delay="200"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-parallax-14"
+                  src="./assets/img/content/26072021-hoa-hau-tu-thien-10w.jpg"
+                  alt="hoa-hau-tu-thien"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-parallax-14"
+                  src="./assets/img/content/16-1610218084302.jpg"
+                  alt="doi-tuong-vuot-bien"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-parallax-14"
+                  src="./assets/img/content/2958_ho-tro-nguoi-ban-ve-so_qdgz.jpg"
+                  alt="ho-tro-nguoi-ban-ve-so"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-parallax-14"
+                  src="./assets/img/content/suất ăn miễn phí mùa dịch viêm phổi 1.jpg"
+                  alt="Com-Mien-Phi"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-parallax-14"
+                  src="./assets/img/content/img_3959_gsje.jpg"
+                  alt="test-covid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-parallax-14"
+                  src="./assets/img/content/unite.jpg"
+                  alt="unite"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="hint" data-aos="t-y-20" data-aos-delay="300">
+            <span>Cuộn sang trái hoặd sang phải!</span>
+          </div>
+        </div>
       </div>
       <!-- end: content -->
 
@@ -447,14 +554,60 @@
         </div>
       </div>
 
-      <footer></footer>
+      <!-- footer -->
+      <footer data-aos="t-y-20" data-aos-delay="100">
+        <div class="author-title">
+          <div class="author-info" data-aos="t-y-20" data-aos-delay="200">
+            <span>Tác giả</span>
+          </div>
+          <div class="author-contact" data-aos="t-y-20" data-aos-delay="300">
+            <span>Liên hệ</span>
+          </div>
+        </div>
+        <div class="author">
+          <div class="info-1">
+            <h2 class="info-1__name" data-aos="t-y-20" data-aos-delay="200">
+              Đặng Văn Thiện
+            </h2>
+            <div class="id-class" data-aos="t-y-20" data-aos-delay="300">
+              <span class="info-1__id">1911505310261</span>
+              <span class="info-1__class">19T2</span>
+            </div>
+          </div>
+
+          <div class="info-2" data-aos="t-y-20" data-aos-delay="400">
+            <a href="tel: +84899243351" class="info-2__phone">0899243351</a>
+            <a href="mailto: 1911505310261@sv.ute.udn.vn" class="info-2__email"
+              >1911505310261@sv.ute.udn.vn</a
+            >
+          </div>
+        </div>
+        <div class="author">
+          <div class="info-1">
+            <h2 class="info-1__name" data-aos="t-y-20" data-aos-delay="400">
+              Nguyễn Thị Như Ý
+            </h2>
+            <div class="id-class" data-aos="t-y-20" data-aos-delay="500">
+              <span class="info-1__id">19111505310271</span>
+              <span class="info-1__class">19T2</span>
+            </div>
+          </div>
+
+          <div class="info-2" data-aos="t-y-20" data-aos-delay="600">
+            <a href="tel: +84327048268" class="info-2__phone">0327048268</a>
+            <a href="mailto: 1911505310271@sv.ute.udn.vn" class="info-2__email"
+              >1911505310271@sv.ute.udn.vn</a
+            >
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script>
       AOS.init({
         once: true,
         duration: 1200,
-        anchorPlacement: "center-bottom",
+        // anchorPlacement: "center-top",
       });
     </script>
 
