@@ -49,6 +49,7 @@ header {
   left: 0;
   width: 100%;
   height: 100vh;
+  display: none;
 }
 
 .menu-toggle,
@@ -82,6 +83,14 @@ header {
   padding: 12px 0;
   font-weight: 500;
   letter-spacing: 2px;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  transform: scale(1) translateY(4px);
+}
+
+.nav-overlay__list a:hover {
+  opacity: 1;
+  transform: scale(1.02) translateY(0);
 }
 
 /* banner */
@@ -365,40 +374,6 @@ footer {
   width: 100%;
 }
 
-/* scroll bar */
-.scroll-bar {
-  position: fixed;
-  flex-direction: column;
-  background: rgba(255, 255, 255, 0.2);
-  height: 140px;
-  width: 1px;
-  top: 50%;
-  right: 40px;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.scroll-bar h2 {
-  position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  font-weight: lighter;
-  color: #fff;
-  right: -36px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.scroll-bar .fill {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  transition: background 0.15s ease;
-}
-
 /* 5k message section */
 
 .row-1,
@@ -532,7 +507,6 @@ footer {
 
 .info-1__class,
 .info-1__id {
-  display: block;
   margin-top: 4px;
 }
 .info-1__id {
@@ -579,4 +553,38 @@ footer {
 .info-2__email:hover,
 .info-2__phone:hover {
   opacity: 1;
+}
+
+/* scroll bar */
+.scroll-bar {
+  position: fixed;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  height: 140px;
+  width: 1px;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.scroll-bar h2 {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #fff;
+  right: -36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-bar .fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: background 0.15s ease;
 }

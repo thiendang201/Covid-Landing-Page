@@ -96,4 +96,13 @@
   .author-contact {
     margin-right: 0;
   }
+
+  .info-1__class,
+  .info-1__id {
+    display: block;
+  }
+
+  .scroll-bar {
+    display: none;
+  }
 }
