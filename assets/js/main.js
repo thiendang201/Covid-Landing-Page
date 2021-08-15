@@ -139,7 +139,7 @@ function progress() {
   var windowHeight = $(window).height();
   var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
   var $bgColor = "#fff";
-  var $textColor = progress > 99 ? "#fff" : "#333";
+  var $textColor = progress > 99 ? "#fff" : "#999";
 
   $(".scroll-bar h2")
     .text(Math.round(progress) + "%")

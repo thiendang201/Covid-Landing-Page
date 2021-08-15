@@ -566,7 +566,7 @@ footer {
   right: 40px;
   transform: translateY(-50%);
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
 }
 
 .scroll-bar h2 {
