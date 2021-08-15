@@ -503,12 +503,9 @@ footer {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.4);
   font-style: italic;
+  margin-top: 6px;
 }
 
-.info-1__class,
-.info-1__id {
-  margin-top: 4px;
-}
 .info-1__id {
   position: relative;
   margin-right: 16px;
